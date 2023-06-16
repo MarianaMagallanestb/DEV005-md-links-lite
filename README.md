@@ -34,10 +34,6 @@ Para ejecutar mdLinks-Lite lo único que necesita hacer es tener una carpeta den
 
 ## 3. Diagrama de flujo de mdLinks Lite
 nota: si el archivo no es tipo MarkdDown simplemente el proceso se finaliza y no realizará ninguna función.
-
-
-
-
 ![image (5)](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/3da98df8-6ced-49c9-bc46-511201bfd398)
 
 
