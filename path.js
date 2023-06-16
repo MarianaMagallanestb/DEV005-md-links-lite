@@ -2,45 +2,45 @@ const { validateLinks } = require('C:/Users/maria/OneDrive/Escritorio/MdLinks/DE
 const pathMo = require('path');
 const fs = require('fs');
 const markDownIt = require('markdown-it');
-const {JSDOM} = require('jsdom');
+const { JSDOM } = require('jsdom');
 
 // FUNCIÓN QUE CONVIERTE RUTAS A ABSOLUTAS 
 const coneverterAbsolut = (path = '') => {
   //console.log("rutas recibidas del validatemdlinks", path);
-    // rootsAbsolutes me va a "decir" si mi ruta es R o A, devuelve un boleano.
-    const rootsAbsolutes = pathMo.isAbsolute(path)
-    //console.log('ES ABSOLUTA?', rootsAbsolutes)
+  // rootsAbsolutes me va a "decir" si mi ruta es R o A, devuelve un boleano.
+  const rootsAbsolutes = pathMo.isAbsolute(path)
+  //console.log('ES ABSOLUTA?', rootsAbsolutes)
 
-    if (rootsAbsolutes === false) {
-      // resultConverteer nos va a "resolver" la ruta, si era relativa se pasa a absoluta 
-      return pathMo.resolve(path);
-      //console.log('RUTA CONVERTIDA A ABSOLUTA', resultConverter);
-    } else{
-      return path
-    }
-}
-
-// FUNCIÓN DE EXTRACCIÓN DE EXTENCIÓN
-const extencion = (path = '') =>{
-  return new Promise((resolve, reject) =>{
-    // ext me trae la extensión del archivo
-  let ext = pathMo.extname(path)
-  if (ext === '.md') {
-    resolve('es un archivo', ext);
-  }else {
-    reject('El archivo no es .md');
+  if (rootsAbsolutes === false) {
+    // resultConverteer nos va a "resolver" la ruta, si era relativa se pasa a absoluta 
+    return pathMo.resolve(path);
+    //console.log('RUTA CONVERTIDA A ABSOLUTA', resultConverter);
+  } else {
+    return path
   }
-  })
-  
 }
- 
+
+// FUNCIÓN DE EXTENCIÓN
+const extencion = (path = '') => {
+  return new Promise((resolve, reject) => {
+    // ext me trae la extensión del archivo
+    let ext = pathMo.extname(path)
+    if (ext === '.md') {
+      resolve('es un archivo', ext);
+    } else {
+      reject('El archivo no es .md');
+    }
+  })
+
+}
+
 
 //FUNCIÓN PARA VALIDAR EXISTENCIA DE ARCHIVO 
 const itExist = (path = '') => {
   if (fs.existsSync(path)) {
-   return true
+    return true
   } else {
-    return false 
+    return false
   }
 };
 
@@ -61,8 +61,8 @@ const getLinks = (path = '', data) => {
     const href = getElement.getAttribute("href");
     linkss.push({
       href: href,
-      text:text,
-      file : path
+      text: text,
+      file: path
     });
     return linkss
   });
@@ -77,7 +77,7 @@ const readingFile = (path = '') => {
     // funcion readfile para leer el archivo
     fs.readFile(path, 'utf-8', (error, data) => {
       if (error) {
-          reject(new Error(error))
+        reject(new Error(error))
         // console.log('error: ', failContent);
       } else {
         // const contentFile = data
@@ -89,16 +89,6 @@ const readingFile = (path = '') => {
   });
 };
 
-/*readingFile('C:/Users/maria/OneDrive/Escritorio/MdLinks/DEV005-md-links-lite/markDown/routes.md')
-.then((response)=>{
-  console.log(response, 94)
-  validateLinks(response);
-})
-.catch((err)=>{
-  console.error(err.message, 100)
-})*/
-
-
 module.exports = {
-  coneverterAbsolut, readingFile, itExist, getLinks,extencion
+  coneverterAbsolut, readingFile, itExist, getLinks, extencion
 };
