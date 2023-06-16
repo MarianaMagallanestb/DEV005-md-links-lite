@@ -18,7 +18,14 @@ mdLinks te permitirá leer y extraer los los links de un archivo MarkDown, una v
 
 Aquí un ejemplo de una validación exitosa.
 
-en caso de que alguno de nuestros Links esté roto, se vería de esta manera. 
+![image (2)](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/8c821eae-814f-43b8-a629-dcd94e07df63)
+
+si alguno de nuestros Links esta roto, se vería de esta manera. 
+
+
+Así mismo si nuestro link esta sería la respuesta.
+
+
 
 
 
