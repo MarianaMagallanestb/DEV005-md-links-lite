@@ -21,9 +21,11 @@ Aquí un ejemplo de una validación exitosa.
 ![image (2)](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/8c821eae-814f-43b8-a629-dcd94e07df63)
 
 si alguno de nuestros Links esta roto, se vería de esta manera. 
+![image (3)](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/f68b98ed-100e-4325-869e-f70e229c4604)
 
+Así mismo si nuestro link es inexistente, esta sería la respuesta.
+![image (4)](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/fac674cc-f575-43d8-88a7-b79276db8984)
 
-Así mismo si nuestro link esta sería la respuesta.
 
 
 
