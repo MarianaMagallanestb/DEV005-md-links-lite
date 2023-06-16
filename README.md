@@ -19,11 +19,13 @@ mdLinks te permitirá leer y extraer los los links de un archivo MarkDown, una v
 Aquí un ejemplo de una validación exitosa.
 
 en caso de que alguno de nuestros Links esté roto, se vería de esta manera. 
-![image](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/d7ccaec6-e598-4751-8077-92a6a5713c65)
+
 
 
 ## 2. ¿Cómo se ejecuta?
 Para ejecutar mdLinks-Lite lo único que necesita hacer es tener una carpeta dentro de su proyecto con el archivo MarkDown que se desea leer y agregar la ruta de su archivo en la carpeta cli.js del repositorio, como se muestra a continuación , por último solo ejecute el comando `node cli.js`.
+![52e5b347-2609-480f-87ee-d97386071640](https://github.com/MarianaMagallanestb/DEV005-md-links-lite/assets/124655049/ff6b4044-b56d-4aa4-8e29-90c66a809d85)
+
 
 ## 3. Diagrama de flujo de mdLinks Lite
 
